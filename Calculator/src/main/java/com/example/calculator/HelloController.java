@@ -99,7 +99,7 @@ public class HelloController {
             if(oper.equals("plus")){
                 int num1 = Integer.parseInt(number1) + Integer.parseInt(numberBuilder);
                 number1 = Integer.toString(num1);
-            } else if(oper.equals("plus")){
+            } else if(oper.equals("minus")){
                 int num1 = Integer.parseInt(number1) - Integer.parseInt(numberBuilder);
                 number1 = Integer.toString(num1);
             } else if(oper.equals("times")){
