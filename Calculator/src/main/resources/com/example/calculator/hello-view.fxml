@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.HelloController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="ac" mnemonicParsing="false" onAction="#clear" prefHeight="58.0" prefWidth="213.0" text="Reset" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="zero" mnemonicParsing="false" onAction="#zero" prefHeight="59.0" prefWidth="252.0" text="0" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="equal" mnemonicParsing="false" onAction="#equals" prefHeight="62.0" prefWidth="225.0" text="=" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="one" mnemonicParsing="false" onAction="#one" text="1" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button fx:id="two" mnemonicParsing="false" onAction="#two" text="2" />
+                    </buttons>
+                  </ButtonBar>
+              </buttons>
+            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="three" mnemonicParsing="false" onAction="#three" text="3" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button fx:id="four" mnemonicParsing="false" onAction="#four" text="4" />
+                    </buttons>
+                  </ButtonBar>
+              </buttons>
+            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="five" mnemonicParsing="false" onAction="#five" text="5" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button fx:id="six" mnemonicParsing="false" onAction="#six" text="6" />
+                    </buttons>
+                  </ButtonBar>
+              </buttons>
+            </ButtonBar>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="seven" mnemonicParsing="false" onAction="#seven" text="7" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button fx:id="eight" mnemonicParsing="false" onAction="#eight" text="8" />
+                    </buttons>
+                  </ButtonBar>
+              </buttons>
+            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="nine" mnemonicParsing="false" onAction="#nine" text="9" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button fx:id="plus" mnemonicParsing="false" onAction="#plus" text="+" />
+                    </buttons>
+                  </ButtonBar>
+              </buttons>
+            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="minus" mnemonicParsing="false" onAction="#minus" text="-" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button fx:id="times" mnemonicParsing="false" onAction="#times" text="*" />
+                    </buttons>
+                  </ButtonBar>
+              </buttons>
+            </ButtonBar>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextFlow prefHeight="100.0" prefWidth="639.0">
+               <children>
+                  <Label fx:id="txt" prefHeight="104.0" prefWidth="600.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Label>
+               </children></TextFlow>
+         </children>
+      </HBox>
+   </children>
+</VBox>
