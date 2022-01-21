@@ -105,6 +105,8 @@ public class HelloController {
             } else if(oper.equals("times")){
                 int num1 = Integer.parseInt(number1) * Integer.parseInt(numberBuilder);
                 number1 = Integer.toString(num1);
+            }  else {
+                number1 = numberBuilder;
             }
             numberBuilder = "";
         }
