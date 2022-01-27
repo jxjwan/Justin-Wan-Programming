@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.friends.HelloController">
+   <children>
+      <TabPane prefHeight="527.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Add Non-existent Friend">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_RIGHT" layoutX="35.0" layoutY="71.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                           <children>
+                              <Label text="First Name">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Last Name">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Discord">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Game Main">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="145.0" layoutY="71.0" prefHeight="200.0" prefWidth="100.0" spacing="7.0">
+                           <children>
+                              <TextField fx:id="textGetFirst" promptText="First Name" />
+                              <TextField fx:id="textGetLast" promptText="Last Name" />
+                              <TextField fx:id="textGetDiscord" promptText="Discord" />
+                              <TextField fx:id="textGetMain" prefHeight="15.0" prefWidth="100.0" promptText="Game Main" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="300.0" layoutY="71.0" prefHeight="200.0" prefWidth="141.0">
+                           <children>
+                              <Label text="Send Friend Request in...">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="addingfriend" alignment="CENTER" mnemonicParsing="false" onAction="#addFriendo" prefHeight="40.0" prefWidth="145.0" text="Genshin Impact" />
+                              <ButtonBar prefHeight="40.0" prefWidth="277.0">
+                                <buttons>
+                                  <Button fx:id="addingfriend2" alignment="CENTER" mnemonicParsing="false" onAction="#addFriendo2" prefHeight="40.0" prefWidth="370.0" text="Smash Bros" />
+                                </buttons>
+                              </ButtonBar>
+                              <Button fx:id="addingfriend3" alignment="CENTER" mnemonicParsing="false" onAction="#addFriendo3" prefHeight="40.0" prefWidth="351.0" text="Brawl Stars" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="462.0" layoutY="86.0" prefHeight="200.0" prefWidth="100.0" />
+                        <Button fx:id="loader" layoutX="73.0" layoutY="286.0" mnemonicParsing="false" onAction="#loadsaves" text="Load Previous Saves" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Genshin Impact">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="243.0" layoutY="89.0" text="Last Name:" />
+                        <ListView fx:id="emptyFriendsList" layoutX="14.0" layoutY="14.0" onMouseClicked="#displayDeTails" prefHeight="352.0" prefWidth="203.0" />
+                        <Label layoutX="300.0" layoutY="14.0" text="Friend Info">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font></Label>
+                        <Label layoutX="241.0" layoutY="71.0" text="First Name:" />
+                        <Label layoutX="256.0" layoutY="106.0" text="Discord:" />
+                        <Label alignment="CENTER" layoutX="224.0" layoutY="123.0" text="Genshin Main:" />
+                        <Label fx:id="LabelFirst" layoutX="319.0" layoutY="71.0" />
+                        <Label fx:id="LabelLast" layoutX="319.0" layoutY="89.0" />
+                        <Label fx:id="LabelDiscord" layoutX="319.0" layoutY="106.0" />
+                        <Label fx:id="LabelMain" layoutX="319.0" layoutY="123.0" />
+                        <Button fx:id="unfriendo" layoutX="351.0" layoutY="173.0" mnemonicParsing="false" onAction="#unfriend" text="Unfriend" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Super Smash Bros">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <Label layoutX="242.0" layoutY="89.0" text="Last Name:" />
+                          <ListView fx:id="emptyFriendsList2" layoutX="14.0" layoutY="14.0" onMouseClicked="#displayDeTails2" prefHeight="352.0" prefWidth="203.0" />
+                          <Label layoutX="300.0" layoutY="14.0" text="Friend Info">
+                              <font>
+                                  <Font name="System Bold" size="32.0" />
+                              </font></Label>
+                          <Label layoutX="241.0" layoutY="71.0" text="First Name:" />
+                          <Label layoutX="256.0" layoutY="106.0" text="Discord:" />
+                          <Label alignment="CENTER" layoutX="228.0" layoutY="123.0" prefHeight="17.0" prefWidth="71.0" text="Smash Main:" />
+                          <Label fx:id="LabelFirst2" layoutX="319.0" layoutY="71.0" />
+                          <Label fx:id="LabelLast2" layoutX="319.0" layoutY="89.0" />
+                          <Label fx:id="LabelDiscord2" layoutX="319.0" layoutY="106.0" />
+                          <Label fx:id="LabelMain2" layoutX="319.0" layoutY="123.0" />
+                          <Button fx:id="unfriendo2" layoutX="351.0" layoutY="173.0" mnemonicParsing="false" onAction="#unfriend2" text="Unfriend" />
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Brawl Stars">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <Label layoutX="242.0" layoutY="89.0" text="Last Name:" />
+                          <ListView fx:id="emptyFriendsList3" layoutX="14.0" layoutY="14.0" onMouseClicked="#displayDeTails3" prefHeight="352.0" prefWidth="203.0" />
+                          <Label layoutX="300.0" layoutY="14.0" text="Friend Info">
+                              <font>
+                                  <Font name="System Bold" size="32.0" />
+                              </font></Label>
+                          <Label layoutX="241.0" layoutY="71.0" text="First Name:" />
+                          <Label layoutX="256.0" layoutY="106.0" text="Discord:" />
+                          <Label alignment="CENTER" layoutX="225.0" layoutY="123.0" prefHeight="17.0" prefWidth="75.0" text="Brawler Main:" />
+                          <Label fx:id="LabelFirst3" layoutX="319.0" layoutY="71.0" />
+                          <Label fx:id="LabelLast3" layoutX="319.0" layoutY="89.0" />
+                          <Label fx:id="LabelDiscord3" layoutX="319.0" layoutY="106.0" />
+                          <Label fx:id="LabelMain3" layoutX="319.0" layoutY="123.0" />
+                          <Button fx:id="unfriendo3" layoutX="351.0" layoutY="173.0" mnemonicParsing="false" onAction="#unfriend3" text="Unfriend" />
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
